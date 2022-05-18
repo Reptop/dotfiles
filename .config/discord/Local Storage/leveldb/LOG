@@ -1,0 +1,6 @@
+2022/05/17-23:29:52.443 381f3 Reusing MANIFEST /home/raed/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2022/05/17-23:29:52.443 381f3 Recovering log #20
+2022/05/17-23:29:52.444 381f3 Reusing old log /home/raed/.config/discord/Local Storage/leveldb/000020.log 
+2022/05/17-23:35:11.265 3c798 Level-0 table #24: started
+2022/05/17-23:35:11.270 3c798 Level-0 table #24: 14067 bytes OK
+2022/05/17-23:35:11.277 3c798 Delete type=0 #20

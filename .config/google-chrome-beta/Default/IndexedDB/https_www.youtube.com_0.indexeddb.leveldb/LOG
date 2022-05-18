@@ -1,0 +1,21 @@
+2022/05/17-23:07:58.257 78ce Reusing MANIFEST /home/raed/.config/google-chrome-beta/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/05/17-23:07:58.257 78ce Recovering log #11
+2022/05/17-23:07:58.265 78ce Reusing old log /home/raed/.config/google-chrome-beta/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000011.log 
+2022/05/17-23:28:27.181 2a86a Level-0 table #16: started
+2022/05/17-23:28:27.190 2a86a Level-0 table #16: 1268841 bytes OK
+2022/05/17-23:28:27.198 2a86a Delete type=0 #11
+2022/05/17-23:28:43.735 2a869 Compacting 1@1 + 1@2 files
+2022/05/17-23:28:43.744 2a869 Generated table #17@1: 424 keys, 49806 bytes
+2022/05/17-23:28:43.744 2a869 Compacted 1@1 + 1@2 files => 49806 bytes
+2022/05/17-23:28:43.749 2a869 compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/05/17-23:28:43.749 2a869 Delete type=2 #13
+2022/05/17-23:28:43.749 2a869 Delete type=2 #16
+2022/05/18-00:19:59.645 6329d Level-0 table #19: started
+2022/05/18-00:19:59.656 6329d Level-0 table #19: 1166230 bytes OK
+2022/05/18-00:19:59.663 6329d Delete type=0 #15
+2022/05/18-00:23:43.656 68586 Compacting 1@1 + 1@2 files
+2022/05/18-00:23:43.664 68586 Generated table #20@1: 376 keys, 29494 bytes
+2022/05/18-00:23:43.664 68586 Compacted 1@1 + 1@2 files => 29494 bytes
+2022/05/18-00:23:43.670 68586 compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/05/18-00:23:43.670 68586 Delete type=2 #17
+2022/05/18-00:23:43.670 68586 Delete type=2 #19

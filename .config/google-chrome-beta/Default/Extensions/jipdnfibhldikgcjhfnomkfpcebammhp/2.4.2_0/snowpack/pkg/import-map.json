@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "lit": "./lit.js",
+    "lit-toast/lit-toast.js": "./lit-toast/lit-toast.js",
+    "lit/directives/until.js": "./lit/directives/until.js"
+  }
+}

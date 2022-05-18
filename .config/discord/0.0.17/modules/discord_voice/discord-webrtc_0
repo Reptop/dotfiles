@@ -1,0 +1,1657 @@
+[2022-05-17 23:29:53.537] [230089] (engine.cpp:231): Time: Tue May 17 23:29:53 2022 PDT logLevel:2
+[2022-05-17 23:29:53.541] [230089] (audio_device_impl.cc:83): Create
+[2022-05-17 23:29:53.541] [230089] (audio_device_impl.cc:91): CreateForTest
+[2022-05-17 23:29:53.542] [230089] (audio_device_buffer.cc:64): AudioDeviceBuffer::ctor
+[2022-05-17 23:29:53.542] [230089] (audio_device_impl.cc:129): AudioDeviceModuleImpl
+[2022-05-17 23:29:53.542] [230089] (audio_device_impl.cc:133): CheckPlatform
+[2022-05-17 23:29:53.542] [230089] (audio_device_impl.cc:144): current platform is Linux
+[2022-05-17 23:29:53.542] [230089] (audio_device_impl.cc:163): CreatePlatformSpecificObjects
+[2022-05-17 23:29:53.542] [230089] (audio_device_impl.cc:992): PlatformAudioLayer
+[2022-05-17 23:29:53.542] [230089] (audio_device_impl.cc:299): PulseAudio support is enabled.
+[2022-05-17 23:29:53.542] [230089] (audio_mixer_manager_pulse_linux.cc:57): AudioMixerManagerLinuxPulse created
+[2022-05-17 23:29:53.542] [230089] (audio_device_pulse_linux.cc:81): AudioDeviceLinuxPulse created
+[2022-05-17 23:29:53.542] [230089] (audio_device_impl.cc:304): Linux PulseAudio APIs will be utilized
+[2022-05-17 23:29:53.542] [230089] (audio_device_impl.cc:345): AttachAudioBuffer
+[2022-05-17 23:29:53.542] [230089] (audio_device_buffer.cc:180): SetRecordingSampleRate(0)
+[2022-05-17 23:29:53.542] [230089] (audio_device_buffer.cc:186): SetPlayoutSampleRate(0)
+[2022-05-17 23:29:53.542] [230089] (audio_device_buffer.cc:200): SetRecordingChannels(0)
+[2022-05-17 23:29:53.542] [230089] (audio_device_buffer.cc:206): SetPlayoutChannels(0)
+[2022-05-17 23:29:53.542] [230089] (audio_engine.cpp:46): Creating audio engine: standard
+[2022-05-17 23:29:53.542] [230089] (audio_device_impl.cc:365): Init
+[2022-05-17 23:29:53.549] [230089] (audio_processing_impl.cc:274): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2022-05-17 23:29:53.550] [230089] (audio_processing_impl.cc:274): Injected APM submodules:
+Echo control factory: 1
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2022-05-17 23:29:53.552] [230089] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2022-05-17 23:29:53.552] [230089] (audio_device_impl.cc:896): RegisterAudioCallback
+[2022-05-17 23:29:53.552] [230089] (audio_device_buffer.cc:81): RegisterAudioCallback
+[2022-05-17 23:29:53.631] [230089] (audio_device_impl.cc:355): ActiveAudioLayer
+[2022-05-17 23:29:53.656] [230089] (audio_engine.cpp:143): Setting audio input device: 'Blue Snowball Analog Stereo'
+[2022-05-17 23:29:53.656] [230089] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2022-05-17 23:29:53.656] [230089] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2022-05-17 23:29:53.656] [230089] (audio_device_impl.cc:789): SetRecordingDevice
+[2022-05-17 23:29:53.656] [230089] (audio_device_generic.cc:67): SetRecordingDevice: Not supported on this platform
+[2022-05-17 23:29:53.657] [230089] (audio_device_impl.cc:777): SetRecordingDevice(2)
+[2022-05-17 23:29:53.657] [230089] (audio_device_impl.cc:567): StereoRecordingIsAvailable
+[2022-05-17 23:29:53.657] [230089] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2022-05-17 23:29:53.657] [230089] (audio_device_impl.cc:574): output: 1
+[2022-05-17 23:29:53.657] [230089] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2022-05-17 23:29:53.657] [230089] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2022-05-17 23:29:53.657] [230089] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2022-05-17 23:29:53.657] [230089] (audio_device_impl.cc:548): SetMicrophoneVolume(255)
+[2022-05-17 23:29:53.657] [230089] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2022-05-17 23:29:53.657] [230089] (audio_engine.cpp:154): Setting audio output device: 'Audio Adapter Analog Stereo'
+[2022-05-17 23:29:53.657] [230089] (audio_device_impl.cc:721): SetPlayoutDevice
+[2022-05-17 23:29:53.657] [230089] (audio_device_generic.cc:62): SetPlayoutDevice: Not supported on this platform
+[2022-05-17 23:29:53.658] [230006] (discord.cpp:551): JS console: ["%c[default]","[BUILD INFO] Release Channel: stable, Build Number: 128650, Version Hash: 1339f8b5228e160df210a8f2b89c6a949fea7f31"]
+[2022-05-17 23:29:53.658] [230089] (audio_device_impl.cc:709): SetPlayoutDevice(3)
+[2022-05-17 23:29:53.658] [230089] (audio_device_impl.cc:613): StereoPlayoutIsAvailable
+[2022-05-17 23:29:53.658] [230089] (audio_mixer_manager_pulse_linux.cc:189): SpeakerIsInitialized
+[2022-05-17 23:29:53.658] [230089] (audio_device_impl.cc:620): output: 1
+[2022-05-17 23:29:53.658] [230089] (audio_device_impl.cc:625): SetStereoPlayout(1)
+[2022-05-17 23:29:53.658] [230089] (audio_device_buffer.cc:206): SetPlayoutChannels(2)
+[2022-05-17 23:29:53.658] [230089] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2022-05-17 23:29:53.658] [230089] (audio_device_impl.cc:548): SetMicrophoneVolume(255)
+[2022-05-17 23:29:53.658] [230089] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2022-05-17 23:29:53.667] [230006] (discord.cpp:551): JS console: ["%c[default]","[NATIVE INFO] host 0.0.17, modules: discord_desktop_core: 3, discord_erlpack: 1, discord_spellcheck: 1, discord_utils: 1, discord_voice: 5, discord_game_utils: 1, discord_rpc: 1"]
+[2022-05-17 23:29:53.692] [230006] (discord.cpp:551): JS console: ["[FAST CONNECT] connected in 503ms"]
+[2022-05-17 23:29:53.694] [230089] (audio_engine.cpp:143): Setting audio input device: 'Blue Snowball Analog Stereo'
+[2022-05-17 23:29:53.694] [230089] (audio_device_impl.cc:827): RecordingIsInitialized
+[2022-05-17 23:29:53.694] [230089] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2022-05-17 23:29:53.694] [230089] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2022-05-17 23:29:53.694] [230089] (audio_device_impl.cc:789): SetRecordingDevice
+[2022-05-17 23:29:53.694] [230089] (audio_device_generic.cc:67): SetRecordingDevice: Not supported on this platform
+[2022-05-17 23:29:53.694] [230089] (audio_device_impl.cc:777): SetRecordingDevice(2)
+[2022-05-17 23:29:53.694] [230089] (audio_device_impl.cc:567): StereoRecordingIsAvailable
+[2022-05-17 23:29:53.694] [230089] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2022-05-17 23:29:53.694] [230089] (audio_device_impl.cc:574): output: 1
+[2022-05-17 23:29:53.694] [230089] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2022-05-17 23:29:53.694] [230089] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2022-05-17 23:29:53.694] [230089] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2022-05-17 23:29:53.694] [230089] (audio_device_impl.cc:548): SetMicrophoneVolume(255)
+[2022-05-17 23:29:53.694] [230089] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2022-05-17 23:29:53.694] [230089] (audio_engine.cpp:154): Setting audio output device: 'Audio Adapter Analog Stereo'
+[2022-05-17 23:29:53.694] [230089] (audio_device_impl.cc:821): PlayoutIsInitialized
+[2022-05-17 23:29:53.694] [230089] (audio_device_impl.cc:721): SetPlayoutDevice
+[2022-05-17 23:29:53.694] [230089] (audio_device_generic.cc:62): SetPlayoutDevice: Not supported on this platform
+[2022-05-17 23:29:53.695] [230089] (audio_device_impl.cc:709): SetPlayoutDevice(3)
+[2022-05-17 23:29:53.695] [230089] (audio_device_impl.cc:613): StereoPlayoutIsAvailable
+[2022-05-17 23:29:53.695] [230089] (audio_mixer_manager_pulse_linux.cc:189): SpeakerIsInitialized
+[2022-05-17 23:29:53.695] [230089] (audio_device_impl.cc:620): output: 1
+[2022-05-17 23:29:53.695] [230089] (audio_device_impl.cc:625): SetStereoPlayout(1)
+[2022-05-17 23:29:53.695] [230089] (audio_device_buffer.cc:206): SetPlayoutChannels(2)
+[2022-05-17 23:29:53.738] [230006] (discord.cpp:551): JS console: ["%c[Spellchecker]","sh is not a valid locale."]
+[2022-05-17 23:29:53.739] [230006] (discord.cpp:551): JS console: ["%c[Spellchecker]","Switching to en-US","(available)"]
+[2022-05-17 23:29:54.151] [230006] (discord.cpp:551): JS console: ["Deprecation warning: value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged and will be removed in an upcoming major release. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.\nArguments: \n[0] _isAMomentObject: true, _isUTC: false, _useUTC: false, _l: undefined, _i: 5/13/2022 10:00 -0800, _f: undefined, _strict: undefined, _locale: [object Object]\nError\n    at Function.createFromInputFallback (https://discordapp.com/assets/57bbc863630d3e8d1aab.js:5599:330)\n    at Vn (https://discordapp.com/assets/57bbc863630d3e8d1aab.js:5625:696)\n    at Kn (https://discordapp.com/assets/57bbc863630d3e8d1aab.js:5628:356)\n    at Wn (https://discordapp.com/assets/57bbc863630d3e8d1aab.js:5628:199)\n    at jn (https://discordapp.com/assets/57bbc863630d3e8d1aab.js:5627:886)\n    at zn (https://discordapp.com/assets/57bbc863630d3e8d1aab.js:5628:697)\n    at Xn (https://discordapp.com/assets/57bbc863630d3e8d1aab.js:5628:731)\n    at i (https://discordapp.com/assets/57bbc863630d3e8d1aab.js:5595:961)\n    at Object.962314 (https://discordapp.com/assets/081ef85bd05b884aa6cc.js:1724:11)\n    at l (https://discordapp.com/assets/faef7d14e8d6e5ff9356.js:1:154)\n    at Object.72840 (https://discordapp.com/assets/081ef85bd05b884aa6cc.js:1579:158)\n    at l (https://discordapp.com/assets/faef7d14e8d6e5ff9356.js:1:154)\n    at Object.900993 (https://discordapp.com/assets/081ef85bd05b884aa6cc.js:54:163)\n    at l (https://discordapp.com/assets/faef7d14e8d6e5ff9356.js:1:154)\n    at Object.101327 (https://discordapp.com/assets/081ef85bd05b884aa6cc.js:161:380)\n    at l (https://discordapp.com/assets/faef7d14e8d6e5ff9356.js:1:154)\n    at Object.206566 (https://discordapp.com/assets/081ef85bd05b884aa6cc.js:168:60)\n    at l (https://discordapp.com/assets/faef7d14e8d6e5ff9356.js:1:154)\n    at Object.998872 (https://discordapp.com/assets/e0b449926da8999c0ab3.js:219:237)\n    at Function.l (https://discordapp.com/assets/faef7d14e8d6e5ff9356.js:1:154)"]
+[2022-05-17 23:29:54.203] [230006] (discord.cpp:551): JS console: ["%c[CloudSyncUtils]","CloudSync is not supported on this platform"]
+[2022-05-17 23:29:54.238] [230006] (discord.cpp:551): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2022-05-17 23:29:54.505] [230006] (discord.cpp:551): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2022-05-17 23:29:54.506] [230006] (discord.cpp:551): JS console: ["[FAST CONNECT] successfully took over websocket, state:","[object Object]"]
+[2022-05-17 23:29:54.506] [230006] (discord.cpp:551): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 1 ms"]
+[2022-05-17 23:29:54.506] [230006] (discord.cpp:551): JS console: ["%c[ConnectionStore]","handleIdentify called","[object Object]"]
+[2022-05-17 23:29:54.506] [230006] (discord.cpp:551): JS console: ["%c[GatewaySocket]","[IDENTIFY]"]
+[2022-05-17 23:29:54.510] [230006] (discord.cpp:551): JS console: ["%c[GatewaySocket]","[HELLO] via [\"gateway-prd-main-mh3d\",{\"micros\":0.0}], heartbeat interval: 41250, took 5 ms"]
+[2022-05-17 23:29:54.516] [230006] (discord.cpp:551): JS console: ["%c[RPCServer:WSS]","Starting on 6463"]
+[2022-05-17 23:29:54.517] [230006] (discord.cpp:551): JS console: ["%c[RPCServer:IPC]","Starting on /run/user/1000/discord-ipc-0"]
+[2022-05-17 23:29:55.620] [230006] (discord.cpp:551): JS console: ["%c[GatewaySocket]","[READY] took 1115ms, via [\"gateway-prd-main-mh3d\",{\"micros\":613895,\"calls\":[\"discord-sessions-blue-prd-2-68\",{\"micros\":582678,\"calls\":[\"start_session\",{\"micros\":131122,\"calls\":[\"discord-api-7c647b6d46-ldvv8\",{\"micros\":109358,\"calls\":[\"get_user\",{\"micros\":8236},\"add_authorized_ip\",{\"micros\":7067},\"get_guilds\",{\"micros\":3639},\"private_channels\",{\"micros\":31404},\"read_states\",{\"micros\":15804},\"coros_wait\",{\"micros\":17191},\"aliases\",{\"micros\":2996},\"affine_user_ids\",{\"micros\":1330},\"experiments\",{\"micros\":5192}]}]},\"guilds_connect\",{\"micros\":22681,\"calls\":[]},\"presence_connect\",{\"micros\":1,\"calls\":[]}]}]}] as 7ccd58b63563f9b0a0b0289896f28be0"]
+[2022-05-17 23:29:55.638] [230006] (discord.cpp:551): JS console: ["%c[AuthenticationStore]","handleConnectionOpen called","[object Object]"]
+[2022-05-17 23:29:55.650] [230006] (discord.cpp:551): JS console: ["%c[Spotify]","WS Connecting"]
+[2022-05-17 23:29:55.651] [230006] (discord.cpp:551): JS console: ["%c[Spotify]","Added account: rkyuuki"]
+[2022-05-17 23:29:55.663] [230006] (discord.cpp:551): JS console: ["%c[NativeDispatchUtils]","Tried getting Dispatch instance before instantiated"]
+[2022-05-17 23:29:55.940] [230006] (discord.cpp:551): JS console: ["%c[Flux]","Slow batch emitChanges took 268ms recentActions:",""]
+[2022-05-17 23:29:55.977] [230006] (discord.cpp:551): JS console: ["%c[GatewaySocket]","[READY_SUPPLEMENTAL] took 1472ms"]
+[2022-05-17 23:29:56.190] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:29:56.269] [230006] (discord.cpp:551): JS console: ["%c[Spotify]","Updated account access token: rkyuuki"]
+[2022-05-17 23:29:56.460] [230006] (discord.cpp:551): JS console: ["%c[Spotify]","WS Connected"]
+[2022-05-17 23:29:56.554] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:29:56.598] [230006] (discord.cpp:551): JS console: ["%c[Spotify]","Profile updated for rkyuuki: isPremium = true"]
+[2022-05-17 23:29:56.641] [230006] (discord.cpp:551): JS console: ["%c[Spotify]","Devices updated for rkyuuki:","[object Object],[object Object]"]
+[2022-05-17 23:29:58.524] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetching messages for 729866369071579238 between undefined and undefined. jump=undefined"]
+[2022-05-17 23:29:58.677] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 729866369071579238 isBefore:false isAfter:false"]
+[2022-05-17 23:29:59.557] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:30:01.158] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetching messages for 604202521661014027 between undefined and undefined. jump=undefined"]
+[2022-05-17 23:30:01.197] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:30:01.239] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/604202521157828608/604202521661014027"]
+[2022-05-17 23:30:01.368] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 604202521661014027 isBefore:false isAfter:false"]
+[2022-05-17 23:30:02.560] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:30:05.561] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:30:07.753] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/604202521157828608/604202521661014027"]
+[2022-05-17 23:30:08.005] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetching messages for 839750828516442173 between undefined and undefined. jump=undefined"]
+[2022-05-17 23:30:08.109] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/604202521157828608/839750828516442173"]
+[2022-05-17 23:30:08.222] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 839750828516442173 isBefore:false isAfter:false"]
+[2022-05-17 23:30:08.564] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:30:08.715] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetching messages for 604557281245528064 between undefined and undefined. jump=undefined"]
+[2022-05-17 23:30:08.786] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/604202521157828608/604557281245528064"]
+[2022-05-17 23:30:08.898] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 604557281245528064 isBefore:false isAfter:false"]
+[2022-05-17 23:30:09.014] [230006] (discord.cpp:551): JS console: ["%c[Flux]","Slow batch emitChanges took 115ms recentActions:","LOAD_MESSAGES_SUCCESS"]
+[2022-05-17 23:30:09.015] [230006] (discord.cpp:551): JS console: ["%c[Flux]","Slow dispatch on LOAD_MESSAGES_SUCCESS: 117ms"]
+[2022-05-17 23:30:09.380] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/604202521157828608/604557281245528064"]
+[2022-05-17 23:30:09.681] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetching messages for 818630142409572422 between undefined and undefined. jump=undefined"]
+[2022-05-17 23:30:09.773] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/604202521157828608/818630142409572422"]
+[2022-05-17 23:30:10.147] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 818630142409572422 isBefore:false isAfter:false"]
+[2022-05-17 23:30:10.326] [230006] (discord.cpp:551): JS console: ["%c[discord_protos.discord_users.v1.FrecencyUserSettings]","Loading proto"]
+[2022-05-17 23:30:11.459] [230006] (discord.cpp:551): JS console: ["%c[RTCLatencyTestManager]","RTC cached preferred region is seattle"]
+[2022-05-17 23:30:11.567] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:30:13.367] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetching messages for 818627244515524620 between undefined and undefined. jump=undefined"]
+[2022-05-17 23:30:13.515] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/604202521157828608/818627244515524620"]
+[2022-05-17 23:30:13.604] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 818627244515524620 isBefore:false isAfter:false"]
+[2022-05-17 23:30:14.570] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:30:17.572] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:30:20.574] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:30:23.577] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:30:26.188] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:30:26.580] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:30:29.580] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:30:29.683] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetching messages for 603427803836317696 between undefined and undefined. jump=undefined"]
+[2022-05-17 23:30:29.799] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/603084195102851073/603427803836317696"]
+[2022-05-17 23:30:29.987] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 603427803836317696 isBefore:false isAfter:false"]
+[2022-05-17 23:30:32.583] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:30:35.586] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:30:38.587] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:30:41.590] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:30:43.491] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetching messages for 887845919893119027 between undefined and undefined. jump=undefined"]
+[2022-05-17 23:30:43.564] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/603084195102851073/887845919893119027"]
+[2022-05-17 23:30:43.699] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 887845919893119027 isBefore:false isAfter:false"]
+[2022-05-17 23:30:44.590] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:30:46.196] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:30:47.593] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:30:50.594] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:30:53.597] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:30:56.361] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:30:56.600] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:30:59.320] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetching messages for 753058294314041465 between undefined and undefined. jump=undefined"]
+[2022-05-17 23:30:59.368] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/732888350012473384/753058294314041465"]
+[2022-05-17 23:30:59.542] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 753058294314041465 isBefore:false isAfter:false"]
+[2022-05-17 23:30:59.600] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:31:02.492] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetching messages for 907817692898160671 between undefined and undefined. jump=undefined"]
+[2022-05-17 23:31:02.584] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/732888350012473384/907817692898160671"]
+[2022-05-17 23:31:02.603] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:31:02.680] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 907817692898160671 isBefore:false isAfter:false"]
+[2022-05-17 23:31:05.604] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:31:08.607] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:31:11.199] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:31:11.607] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:31:14.608] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:31:17.610] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:31:20.614] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:31:21.203] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:31:23.616] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:31:26.617] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:31:29.620] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:31:32.623] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:31:35.624] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:31:38.624] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:31:41.219] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:31:41.627] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:31:44.627] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:31:47.630] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:31:50.634] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:31:51.222] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:31:51.734] [230006] (discord.cpp:551): JS console: ["%c[GatewaySocket]","Performing an expedited heartbeat reason: network detected offline."]
+[2022-05-17 23:31:53.636] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:31:55.920] [230006] (discord.cpp:551): JS console: ["%c[GatewaySocket]","Performing an expedited heartbeat reason: network detected online."]
+[2022-05-17 23:31:56.221] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:31:56.505] [230006] (discord.cpp:551): JS console: ["%c[Spotify]","Devices updated for rkyuuki:","[object Object],[object Object]"]
+[2022-05-17 23:31:56.639] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:31:57.162] [230006] (discord.cpp:551): JS console: ["%c[GatewaySocket]","Expedited heartbeat succeeded"]
+[2022-05-17 23:31:59.640] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:32:01.223] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:32:02.642] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:32:05.644] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:32:06.221] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:32:08.647] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:32:11.223] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:32:11.649] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:32:14.651] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:32:16.223] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:32:17.654] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:32:20.656] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:32:23.658] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:32:26.660] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:32:29.661] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:32:32.664] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:32:35.667] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:32:38.667] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:32:41.225] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:32:41.670] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:32:44.674] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:32:47.677] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:32:50.679] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:32:51.226] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:32:53.680] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:32:56.683] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:32:59.684] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:33:01.226] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:33:02.687] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:33:05.687] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:33:06.237] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:33:08.690] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:33:11.691] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:33:14.694] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:33:17.697] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:33:20.700] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:33:21.236] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:33:23.704] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:33:26.707] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:33:29.707] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:33:32.710] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:33:35.713] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:33:36.245] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:33:38.714] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:33:41.248] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:33:41.717] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:33:44.718] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:33:47.720] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:33:50.724] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:33:51.246] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:33:53.724] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:33:56.245] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:33:56.727] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:33:59.727] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:34:02.730] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:34:05.730] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:34:08.734] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:34:11.246] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:34:11.734] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:34:14.737] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:34:16.246] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:34:17.740] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:34:20.741] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:34:21.247] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:34:23.744] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:34:26.747] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:34:29.747] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:34:32.750] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:34:35.750] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:34:38.753] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:34:41.754] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:34:44.757] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:34:47.757] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:34:50.760] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:34:51.251] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:34:53.760] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:34:56.251] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:34:56.764] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:34:59.767] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:35:01.252] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games","[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"]
+[2022-05-17 23:35:01.265] [230006] (discord.cpp:551): JS console: ["%c[NativeDispatchUtils]","Tried getting Dispatch instance before instantiated"]
+[2022-05-17 23:35:01.267] [230006] (discord.cpp:551): JS console: ["%c[AutoAnalytics]","Cannot identify game","Error: Error 1 when fetching info on 250961"]
+[2022-05-17 23:35:02.770] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:35:05.770] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:35:06.264] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games","[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"]
+[2022-05-17 23:35:06.267] [230006] (discord.cpp:551): JS console: ["%c[AutoAnalytics]","Cannot identify game","Error: Error 1 when fetching info on 251526"]
+[2022-05-17 23:35:06.268] [230006] (discord.cpp:551): JS console: ["%c[NativeDispatchUtils]","Tried getting Dispatch instance before instantiated"]
+[2022-05-17 23:35:08.774] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:35:11.253] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games","[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"]
+[2022-05-17 23:35:11.256] [230006] (discord.cpp:551): JS console: ["%c[AutoAnalytics]","Cannot identify game","Error: Error 1 when fetching info on 252066"]
+[2022-05-17 23:35:11.256] [230006] (discord.cpp:551): JS console: ["%c[NativeDispatchUtils]","Tried getting Dispatch instance before instantiated"]
+[2022-05-17 23:35:11.774] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:35:14.776] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:35:16.260] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games","[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"]
+[2022-05-17 23:35:16.263] [230006] (discord.cpp:551): JS console: ["%c[AutoAnalytics]","Cannot identify game","Error: Error 1 when fetching info on 252632"]
+[2022-05-17 23:35:16.263] [230006] (discord.cpp:551): JS console: ["%c[NativeDispatchUtils]","Tried getting Dispatch instance before instantiated"]
+[2022-05-17 23:35:17.777] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:35:20.780] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:35:21.257] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games","[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"]
+[2022-05-17 23:35:21.264] [230006] (discord.cpp:551): JS console: ["%c[AutoAnalytics]","Cannot identify game","Error: Error 1 when fetching info on 252632"]
+[2022-05-17 23:35:23.783] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:35:26.256] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:35:26.785] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:35:29.787] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:35:32.790] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:35:35.794] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:35:38.794] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:35:41.797] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:35:44.800] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:35:46.262] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:35:47.804] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:35:50.807] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:35:51.264] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:35:53.810] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:35:56.810] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:35:59.814] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:36:01.264] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games","[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"]
+[2022-05-17 23:36:01.267] [230006] (discord.cpp:551): JS console: ["%c[AutoAnalytics]","Cannot identify game","Error: Error 1 when fetching info on 255733"]
+[2022-05-17 23:36:01.267] [230006] (discord.cpp:551): JS console: ["%c[NativeDispatchUtils]","Tried getting Dispatch instance before instantiated"]
+[2022-05-17 23:36:02.817] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:36:05.817] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:36:06.271] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games","[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"]
+[2022-05-17 23:36:06.276] [230006] (discord.cpp:551): JS console: ["%c[AutoAnalytics]","Cannot identify game","Error: Error 1 when fetching info on 256252"]
+[2022-05-17 23:36:06.276] [230006] (discord.cpp:551): JS console: ["%c[NativeDispatchUtils]","Tried getting Dispatch instance before instantiated"]
+[2022-05-17 23:36:08.820] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:36:11.272] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:36:11.820] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:36:14.824] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:36:17.827] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:36:20.827] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:36:21.279] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:36:23.829] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:36:26.830] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:36:29.833] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:36:32.837] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:36:35.837] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:36:38.840] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:36:41.843] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:36:44.846] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:36:46.292] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:36:47.847] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:36:50.850] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:36:51.293] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:36:53.854] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:36:56.857] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:36:59.859] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:37:02.861] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:37:05.864] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:37:08.867] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:37:11.867] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:37:14.870] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:37:17.873] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:37:20.874] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:37:21.302] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:37:23.877] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:37:26.880] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:37:29.880] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:37:32.883] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:37:35.884] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:37:38.887] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:37:41.887] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:37:44.890] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:37:46.309] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:37:47.891] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:37:50.894] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:37:51.316] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:37:53.897] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:37:56.900] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:37:59.900] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:38:02.903] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:38:05.907] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:38:06.329] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:38:08.910] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:38:11.913] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:38:14.917] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:38:16.339] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:38:17.920] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:38:20.920] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:38:23.923] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:38:26.927] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:38:29.927] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:38:32.930] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:38:35.930] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:38:38.934] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:38:41.367] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:38:41.937] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:38:44.940] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:38:46.375] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:38:47.943] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:38:50.944] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:38:53.947] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:38:56.947] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:38:59.951] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:39:01.379] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:39:02.954] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:39:05.957] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:39:08.960] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:39:11.390] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:39:11.962] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:39:14.965] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:39:16.399] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:39:17.968] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:39:20.970] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:39:21.402] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:39:23.973] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:39:26.974] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:39:29.977] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:39:32.980] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:39:35.983] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:39:38.984] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:39:41.419] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:39:41.985] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:39:44.987] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:39:46.429] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:39:47.990] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:39:50.991] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:39:53.994] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:39:56.995] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:39:59.997] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:40:03.000] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:40:06.003] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:40:09.004] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:40:12.007] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:40:15.010] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:40:18.010] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:40:21.014] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:40:24.017] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:40:27.020] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:40:30.020] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:40:31.473] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:40:33.024] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:40:36.027] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:40:39.027] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:40:41.479] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:40:42.030] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:40:45.033] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:40:48.034] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:40:51.037] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:40:54.040] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:40:57.040] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:41:00.041] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:41:03.044] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:41:06.047] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:41:06.500] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:41:09.050] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:41:11.504] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:41:12.053] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:41:15.054] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:41:16.509] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:41:18.057] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:41:21.060] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:41:24.062] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:41:27.064] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:41:30.067] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:41:33.070] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:41:36.070] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:41:39.073] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:41:41.526] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:41:42.074] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:41:45.077] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:41:48.080] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:41:51.082] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:41:54.084] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:41:57.086] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:42:00.087] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:42:03.090] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:42:06.094] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:42:09.097] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:42:11.546] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:42:12.098] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:42:15.100] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:42:18.103] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:42:21.104] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:42:24.104] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:42:27.107] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:42:30.110] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:42:33.113] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:42:36.114] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:42:36.573] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:42:39.117] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:42:41.572] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:42:42.117] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:42:45.120] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:42:48.120] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:42:51.123] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:42:54.124] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:42:57.127] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:43:00.127] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:43:01.576] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:43:03.130] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:43:06.133] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:43:09.134] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:43:11.577] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:43:12.137] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:43:15.138] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:43:15.393] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetching messages for 879080167522320395 between undefined and undefined. jump=undefined"]
+[2022-05-17 23:43:15.471] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/711370502492389417/879080167522320395"]
+[2022-05-17 23:43:15.641] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 879080167522320395 isBefore:false isAfter:false"]
+[2022-05-17 23:43:18.140] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:43:21.143] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:43:24.145] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:43:24.890] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetching messages for 711370502492389421 between undefined and undefined. jump=undefined"]
+[2022-05-17 23:43:24.956] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/711370502492389417/711370502492389421"]
+[2022-05-17 23:43:25.105] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 711370502492389421 isBefore:false isAfter:false"]
+[2022-05-17 23:43:27.145] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:43:30.148] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:43:33.150] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:43:36.153] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:43:36.583] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:43:39.154] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:43:40.410] [230006] (discord.cpp:551): JS console: ["Unable to determine render window for element","[object HTMLDocument]"]
+[2022-05-17 23:43:41.583] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:43:41.781] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/711370502492389417/879080167522320395"]
+[2022-05-17 23:43:42.157] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:43:45.158] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:43:48.160] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:43:51.161] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:43:54.164] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:43:57.167] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:44:00.167] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:44:01.590] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:44:03.168] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:44:06.170] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:44:06.595] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:44:09.171] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:44:11.593] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:44:12.174] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:44:15.175] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:44:16.591] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:44:18.177] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:44:21.180] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:44:24.183] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:44:27.187] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:44:30.187] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:44:33.190] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:44:36.190] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:44:39.193] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:44:41.607] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:44:42.194] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:44:45.197] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:44:48.200] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:44:51.203] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:44:54.204] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:44:57.205] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:45:00.208] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:45:03.210] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:45:06.213] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:45:09.217] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:45:12.220] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:45:15.220] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:45:18.223] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:45:21.224] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:45:24.224] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:45:27.227] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:45:30.230] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:45:33.233] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:45:36.237] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:45:39.240] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:45:42.243] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:45:45.244] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:45:48.247] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:45:51.247] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:45:54.250] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:45:56.676] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:45:57.253] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:46:00.254] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:46:03.257] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:46:06.258] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:46:06.687] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:46:09.260] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:46:12.264] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:46:15.266] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:46:18.267] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:46:21.270] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:46:24.270] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:46:27.274] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:46:30.275] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:46:33.277] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:46:36.280] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:46:39.283] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:46:42.284] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:46:45.285] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:46:46.731] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:46:48.287] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:46:51.288] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:46:54.290] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:46:57.293] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:47:00.294] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:47:03.297] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:47:06.297] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:47:09.300] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:47:11.753] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:47:12.300] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:47:15.304] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:47:18.307] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:47:21.310] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:47:21.756] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:47:24.311] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:47:27.314] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:47:30.317] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:47:31.758] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:47:33.317] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:47:36.318] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:47:36.759] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:47:39.320] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:47:42.323] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:47:45.327] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:47:48.327] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:47:51.330] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:47:54.333] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:47:56.766] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:47:57.334] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:48:00.337] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:48:01.770] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:48:03.340] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:48:06.343] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:48:09.344] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:48:11.247] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/603084195102851073/887845919893119027"]
+[2022-05-17 23:48:12.347] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:48:15.350] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:48:18.350] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:48:21.351] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:48:24.354] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:48:27.357] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:48:30.360] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:48:33.360] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:48:36.361] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:48:36.774] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:48:39.364] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:48:41.771] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:48:42.365] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:48:45.366] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:48:48.367] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:48:51.370] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:48:54.370] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:48:56.842] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:48:57.373] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:49:00.375] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:49:03.377] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:49:06.380] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:49:09.383] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:49:11.774] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:49:12.384] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:49:13.755] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/603084195102851073/776668161306656768/797326486708813864"]
+[2022-05-17 23:49:13.763] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetching messages for 776668161306656768 between undefined and undefined. jump={\"messageId\":\"797326486708813864\",\"flash\":true}"]
+[2022-05-17 23:49:13.941] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetched 51 messages for 776668161306656768 isBefore:false isAfter:false"]
+[2022-05-17 23:49:15.387] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:49:15.794] [230006] (discord.cpp:551): JS console: ["%c[ComponentDispatchUtils]","ComponentDispatch.subscribe: Attempting to add a duplicate listener","POPOUT_CLOSE"]
+[2022-05-17 23:49:18.390] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:49:21.393] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:49:24.394] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:49:26.775] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:49:27.397] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:49:30.399] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:49:31.777] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:49:33.400] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:49:36.403] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:49:39.407] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:49:42.407] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:49:45.410] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:49:48.413] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:49:51.414] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:49:54.417] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:49:57.418] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:50:00.422] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:50:01.791] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:50:03.424] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:50:06.427] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:50:06.791] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:50:09.427] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:50:11.798] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:50:12.430] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:50:15.433] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:50:18.437] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:50:21.440] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:50:24.441] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:50:27.444] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:50:30.447] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:50:31.811] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:50:33.447] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:50:36.447] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:50:36.818] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:50:39.450] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:50:41.823] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:50:42.454] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:50:45.457] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:50:48.460] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:50:51.460] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:50:54.463] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:50:56.843] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:50:57.466] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:51:00.467] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:51:03.468] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:51:06.471] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:51:06.849] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:51:09.474] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:51:12.476] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:51:15.476] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:51:18.477] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:51:21.480] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:51:24.483] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:51:27.484] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:51:30.487] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:51:33.490] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:51:36.490] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:51:36.850] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:51:39.493] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:51:41.853] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:51:42.494] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:51:45.497] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:51:48.497] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:51:51.500] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:51:51.858] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:51:54.500] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:51:57.504] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:52:00.507] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:52:03.510] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:52:06.513] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:52:06.855] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:52:09.516] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:52:12.520] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:52:15.523] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:52:18.524] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:52:21.527] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:52:24.530] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:52:26.853] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:52:27.533] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:52:30.534] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:52:33.537] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:52:36.538] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:52:39.540] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:52:42.543] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:52:45.547] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:52:48.550] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:52:51.550] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:52:51.856] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:52:54.553] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:52:57.557] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:53:00.557] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:53:01.856] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:53:03.559] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:53:06.562] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:53:09.564] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:53:11.463] [230006] (discord.cpp:551): JS console: ["%c[MessageStore]","Message was missing an author!"]
+[2022-05-17 23:53:12.567] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:53:15.570] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:53:16.867] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:53:18.572] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:53:21.574] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:53:21.867] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:53:24.577] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:53:27.577] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:53:30.578] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:53:31.871] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:53:33.580] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:53:36.581] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:53:39.584] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:53:42.587] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:53:45.590] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:53:48.590] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:53:51.593] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:53:51.873] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:53:54.596] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:53:57.598] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:54:00.601] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:54:01.872] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:54:03.604] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:54:06.607] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:54:06.873] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:54:09.607] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:54:12.610] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:54:15.610] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:54:18.612] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:54:21.614] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:54:24.616] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:54:26.880] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:54:27.619] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:54:30.620] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:54:31.881] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:54:33.623] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:54:36.627] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:54:39.630] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:54:42.633] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:54:44.833] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetching messages for 776668161306656768 between undefined and undefined. jump={\"present\":true}"]
+[2022-05-17 23:54:44.834] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/603084195102851073/776668161306656768"]
+[2022-05-17 23:54:45.057] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 776668161306656768 isBefore:false isAfter:false"]
+[2022-05-17 23:54:45.635] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:54:48.637] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:54:51.640] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:54:51.882] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:54:54.643] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:54:56.882] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:54:57.644] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:55:00.647] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:55:03.647] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:55:06.650] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:55:09.651] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:55:12.654] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:55:15.655] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:55:18.657] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:55:21.660] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:55:24.663] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:55:26.889] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:55:27.667] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:55:30.667] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:55:33.670] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:55:36.673] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:55:36.892] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:55:39.677] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:55:42.680] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:55:45.683] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:55:48.685] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:55:51.687] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:55:51.890] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:55:54.690] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:55:56.894] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:55:57.691] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:56:00.694] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:56:03.697] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:56:06.700] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:56:06.893] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:56:09.704] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:56:12.707] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:56:15.710] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:56:18.713] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:56:21.716] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:56:21.898] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:56:24.717] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:56:27.720] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:56:30.720] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:56:33.723] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:56:36.724] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:56:37.173] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetching messages for 710282923265490968 between undefined and undefined. jump=undefined"]
+[2022-05-17 23:56:37.484] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 710282923265490968 isBefore:false isAfter:false"]
+[2022-05-17 23:56:39.727] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:56:42.727] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:56:43.409] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/732888350012473384/907817692898160671"]
+[2022-05-17 23:56:45.269] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetching messages for 754920419957669940 between undefined and undefined. jump=undefined"]
+[2022-05-17 23:56:45.363] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/754892786683084821/754920419957669940"]
+[2022-05-17 23:56:45.488] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 754920419957669940 isBefore:false isAfter:false"]
+[2022-05-17 23:56:45.728] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:56:46.894] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:56:47.984] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/711370502492389417/879080167522320395"]
+[2022-05-17 23:56:48.730] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:56:50.952] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/754892786683084821/754920419957669940"]
+[2022-05-17 23:56:51.733] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:56:51.853] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/604202521157828608/818627244515524620"]
+[2022-05-17 23:56:52.025] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:56:52.766] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetching messages for 852607230855610368 between undefined and undefined. jump=undefined"]
+[2022-05-17 23:56:52.970] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/852603439099019305/852607230855610368"]
+[2022-05-17 23:56:53.041] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetched 3 messages for 852607230855610368 isBefore:false isAfter:false"]
+[2022-05-17 23:56:53.502] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/732888350012473384/907817692898160671"]
+[2022-05-17 23:56:54.141] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/732888350012473384/907817692898160671"]
+[2022-05-17 23:56:54.736] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:56:55.618] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetching messages for 869832421514825728 between undefined and undefined. jump=undefined"]
+[2022-05-17 23:56:55.718] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/732888350012473384/869832421514825728"]
+[2022-05-17 23:56:55.819] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 869832421514825728 isBefore:false isAfter:false"]
+[2022-05-17 23:56:56.894] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:56:57.739] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:57:00.412] [230006] (discord.cpp:551): JS console: ["Unable to determine render window for element","[object HTMLDocument]"]
+[2022-05-17 23:57:00.740] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:57:02.137] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/604202521157828608/818627244515524620"]
+[2022-05-17 23:57:03.740] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:57:06.316] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/603084195102851073/776668161306656768"]
+[2022-05-17 23:57:06.743] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:57:09.745] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:57:09.863] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetching messages for 887369792590327871 between undefined and undefined. jump=undefined"]
+[2022-05-17 23:57:09.965] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/603084195102851073/887369792590327871"]
+[2022-05-17 23:57:10.071] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 887369792590327871 isBefore:false isAfter:false"]
+[2022-05-17 23:57:12.695] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/603084195102851073/776668161306656768"]
+[2022-05-17 23:57:12.747] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:57:15.750] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:57:16.898] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:57:18.750] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:57:19.414] [230006] (discord.cpp:551): JS console: ["Unable to determine render window for element","[object HTMLDocument]"]
+[2022-05-17 23:57:21.754] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:57:21.901] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:57:24.757] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:57:26.896] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:57:27.759] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:57:30.760] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:57:31.896] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:57:33.760] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:57:36.763] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:57:39.249] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetching messages for 825455988244873226 between undefined and undefined. jump=undefined"]
+[2022-05-17 23:57:39.257] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/825455701819392051/825455988244873226"]
+[2022-05-17 23:57:39.589] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetched 3 messages for 825455988244873226 isBefore:false isAfter:false"]
+[2022-05-17 23:57:39.764] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:57:41.121] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetching messages for 833919402897965088 between undefined and undefined. jump=undefined"]
+[2022-05-17 23:57:41.248] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/594618477772275730/833919402897965088"]
+[2022-05-17 23:57:41.314] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetched 6 messages for 833919402897965088 isBefore:false isAfter:false"]
+[2022-05-17 23:57:41.896] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:57:42.765] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:57:45.767] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:57:48.770] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:57:51.773] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:57:54.037] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/852603439099019305/852607230855610368"]
+[2022-05-17 23:57:54.775] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:57:55.208] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/732888350012473384/869832421514825728"]
+[2022-05-17 23:57:56.025] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/852603439099019305/852607230855610368"]
+[2022-05-17 23:57:57.536] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/732888350012473384/869832421514825728"]
+[2022-05-17 23:57:57.778] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:57:59.897] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/603084195102851073/776668161306656768"]
+[2022-05-17 23:58:00.780] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:58:01.900] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:58:03.781] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:58:06.784] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:58:09.787] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:58:11.901] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:58:12.790] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:58:15.793] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:58:18.794] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:58:21.797] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:58:21.900] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:58:24.799] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:58:27.800] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:58:29.175] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/603084195102851073/776668161306656768/797326486708813864"]
+[2022-05-17 23:58:29.184] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetching messages for 776668161306656768 between undefined and undefined. jump={\"messageId\":\"797326486708813864\",\"flash\":true}"]
+[2022-05-17 23:58:29.357] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetched 51 messages for 776668161306656768 isBefore:false isAfter:false"]
+[2022-05-17 23:58:30.803] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:58:31.714] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetching messages for 776668161306656768 between undefined and undefined. jump={\"present\":true}"]
+[2022-05-17 23:58:31.715] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/603084195102851073/776668161306656768"]
+[2022-05-17 23:58:31.916] [230006] (discord.cpp:551): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 776668161306656768 isBefore:false isAfter:false"]
+[2022-05-17 23:58:33.807] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:58:36.807] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:58:39.810] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:58:41.903] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:58:42.813] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:58:45.815] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:58:48.817] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:58:51.820] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:58:51.909] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:58:54.823] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:58:57.824] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:59:00.827] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:59:03.830] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:59:06.833] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:59:09.836] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:59:12.840] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:59:15.841] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:59:16.933] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:59:18.844] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:59:21.845] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:59:21.939] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:59:24.847] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:59:27.850] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:59:30.853] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:59:33.857] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:59:36.857] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:59:39.860] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:59:42.863] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:59:45.864] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:59:46.948] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:59:48.867] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:59:51.867] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:59:51.951] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-17 23:59:54.870] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:59:56.930] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/732888350012473384/869832421514825728"]
+[2022-05-17 23:59:57.872] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-17 23:59:58.403] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/711370502492389417/879080167522320395"]
+[2022-05-18 00:00:00.874] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:00:03.521] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/711370502492389417/879080167522320395"]
+[2022-05-18 00:00:03.875] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:00:04.148] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/732888350012473384/869832421514825728"]
+[2022-05-18 00:00:06.877] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:00:06.950] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:00:09.879] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:00:12.880] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:00:15.884] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:00:16.953] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:00:18.887] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:00:21.888] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:00:24.890] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:00:26.954] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:00:27.893] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:00:30.896] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:00:33.897] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:00:36.900] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:00:39.900] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:00:42.903] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:00:45.907] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:00:48.907] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:00:51.910] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:00:54.910] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:00:56.960] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:00:57.913] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:01:00.917] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:01:01.993] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:01:03.918] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:01:06.920] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:01:06.962] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:01:09.923] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:01:11.963] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:01:12.926] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:01:15.930] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:01:16.963] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:01:18.933] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:01:21.935] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:01:24.937] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:01:27.939] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:01:30.940] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:01:31.963] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:01:33.940] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:01:36.944] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:01:39.946] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:01:41.968] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:01:42.947] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:01:45.949] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:01:48.952] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:01:51.955] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:01:54.958] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:01:57.960] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:02:00.964] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:02:01.986] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:02:03.967] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:02:04.142] [230006] (discord.cpp:551): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/603084195102851073/776668161306656768"]
+[2022-05-18 00:02:06.967] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:02:09.969] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:02:11.975] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:02:12.972] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:02:15.974] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:02:18.977] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:02:21.980] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:02:24.981] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:02:26.986] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:02:27.984] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:02:30.987] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:02:33.990] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:02:36.989] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:02:36.991] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:02:39.993] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:02:41.991] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:02:42.997] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:02:45.998] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:02:49.000] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:02:52.003] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:02:55.006] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:02:58.007] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:03:01.010] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:03:01.995] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:03:04.010] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:03:06.995] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:03:07.013] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:03:10.014] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:03:11.995] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:03:13.016] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:03:16.017] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:03:19.018] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:03:22.020] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:03:25.023] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:03:28.027] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:03:31.027] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:03:31.999] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:03:34.030] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:03:37.002] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:03:37.030] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:03:40.033] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:03:42.001] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:03:43.037] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:03:46.037] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:03:49.040] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:03:52.040] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:03:55.043] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:03:58.046] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:04:01.047] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:04:04.048] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:04:07.006] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:04:07.050] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:04:10.053] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:04:12.007] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:04:13.057] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:04:16.057] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:04:19.060] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:04:22.062] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:04:25.063] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:04:28.066] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:04:31.067] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:04:34.070] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:04:37.072] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:04:40.074] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:04:43.077] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:04:46.078] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:04:49.080] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:04:52.083] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:04:55.087] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:04:58.090] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:05:01.092] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:05:04.093] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:05:07.097] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:05:10.097] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:05:12.028] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:05:13.100] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:05:16.101] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:05:17.029] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:05:19.103] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:05:22.107] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:05:25.110] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:05:27.031] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:05:28.110] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:05:31.113] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:05:32.034] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:05:34.117] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:05:37.034] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:05:37.120] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:05:40.120] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:05:42.033] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:05:43.122] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:05:46.123] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:05:47.035] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:05:49.127] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:05:52.130] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:05:55.133] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:05:58.136] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:06:01.140] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:06:04.140] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:06:07.039] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:06:07.143] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:06:10.143] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:06:13.145] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:06:16.148] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:06:19.150] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:06:22.046] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:06:22.153] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:06:25.157] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:06:27.045] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:06:28.160] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:06:31.163] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:06:32.046] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:06:34.163] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:06:37.167] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:06:40.169] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:06:43.170] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:06:46.172] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:06:49.173] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:06:52.177] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:06:55.177] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:06:58.180] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:07:01.180] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:07:02.053] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:07:04.183] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:07:07.053] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:07:07.187] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:07:10.190] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:07:13.190] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:07:16.193] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:07:19.194] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:07:22.055] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:07:22.197] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:07:25.200] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:07:27.057] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:07:28.203] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:07:31.203] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:07:34.207] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:07:37.060] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:07:37.210] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:07:40.212] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:07:43.213] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:07:46.217] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:07:47.063] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:07:49.220] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:07:52.220] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:07:55.223] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:07:57.064] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:07:58.226] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:08:01.227] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:08:02.061] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:08:04.230] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:08:07.061] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:08:07.233] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:08:10.236] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:08:12.062] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:08:13.237] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:08:16.240] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:08:19.243] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:08:22.247] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:08:25.247] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:08:28.250] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:08:31.253] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:08:34.257] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:08:37.259] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:08:40.260] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:08:42.076] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:08:43.263] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:08:46.267] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:08:49.267] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:08:52.080] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:08:52.270] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:08:55.273] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:08:58.273] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:09:01.277] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:09:04.277] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:09:07.280] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:09:10.280] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:09:12.082] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:09:13.283] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:09:16.284] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:09:19.287] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:09:22.089] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:09:22.290] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:09:25.290] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:09:28.293] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:09:31.294] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:09:34.297] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:09:37.300] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:09:40.300] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:09:42.093] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:09:43.303] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:09:46.306] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:09:47.094] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:09:49.307] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:09:52.096] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:09:52.310] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:09:55.313] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:09:58.313] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:10:01.317] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:10:04.319] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:10:07.098] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:10:07.320] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:10:10.323] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:10:13.327] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:10:16.327] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:10:17.099] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:10:19.330] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:10:22.097] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:10:22.333] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:10:25.337] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:10:28.337] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:10:31.340] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:10:34.340] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:10:37.100] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:10:37.343] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:10:40.347] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:10:43.347] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:10:46.350] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:10:49.353] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:10:52.355] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:10:55.358] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:10:57.105] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:10:58.360] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:11:01.363] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:11:04.367] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:11:07.104] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:11:07.370] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:11:10.370] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:11:13.373] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:11:16.374] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:11:17.107] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:11:19.377] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:11:22.378] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:11:25.380] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:11:28.383] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:11:31.386] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:11:32.117] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:11:34.387] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:11:37.116] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:11:37.390] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:11:40.390] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:11:43.393] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:11:46.397] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:11:47.118] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:11:49.400] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:11:52.118] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:11:52.400] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:11:55.403] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:11:58.403] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:12:01.407] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:12:02.122] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:12:04.407] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:12:07.410] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:12:10.410] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:12:12.122] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:12:13.413] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:12:16.413] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:12:17.124] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:12:19.415] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:12:22.418] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:12:25.420] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:12:28.423] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:12:31.427] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:12:32.129] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:12:34.430] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:12:37.131] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:12:37.433] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:12:40.433] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:12:42.131] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:12:43.437] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:12:46.440] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:12:47.133] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:12:49.440] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:12:52.440] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:12:55.443] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:12:58.446] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:13:01.449] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:13:04.452] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:13:07.139] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:13:07.453] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:13:10.455] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:13:12.142] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:13:13.457] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:13:16.460] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:13:19.460] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:13:22.461] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:13:25.463] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:13:27.145] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:13:28.467] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:13:31.468] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:13:32.147] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:13:34.470] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:13:37.144] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:13:37.473] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:13:40.476] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:13:42.145] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:13:43.477] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:13:46.480] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:13:49.483] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:13:52.151] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:13:52.483] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:13:55.487] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:13:57.149] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:13:58.487] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:14:01.490] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:14:04.493] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:14:07.154] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:14:07.496] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:14:10.497] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:14:13.500] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:14:16.503] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:14:19.506] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:14:22.150] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:14:22.507] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:14:25.510] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:14:28.511] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:14:31.513] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:14:34.517] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:14:37.154] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:14:37.518] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:14:40.520] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:14:43.523] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:14:46.527] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:14:49.530] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:14:52.533] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:14:55.533] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:14:57.154] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:14:58.536] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:15:01.539] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:15:02.154] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:15:04.540] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:15:07.154] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:15:07.540] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:15:10.543] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:15:12.156] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:15:13.547] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:15:16.547] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:15:17.157] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:15:19.550] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:15:22.553] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:15:25.553] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:15:28.557] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:15:31.560] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:15:32.156] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:15:34.560] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:15:37.563] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:15:40.564] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:15:43.567] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:15:46.570] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:15:47.162] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:15:49.573] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:15:52.576] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:15:55.577] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:15:57.164] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:15:58.580] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:16:01.583] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:16:02.166] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:16:04.584] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:16:07.587] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:16:10.590] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:16:13.590] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:16:16.594] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:16:19.597] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:16:22.167] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:16:22.600] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:16:25.603] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:16:27.167] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:16:28.605] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:16:31.607] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:16:32.169] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:16:34.610] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:16:37.610] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:16:40.613] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:16:43.616] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:16:46.617] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:16:47.170] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:16:49.620] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:16:52.170] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:16:52.623] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:16:55.626] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:16:58.627] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:17:01.630] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:17:04.633] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:17:07.172] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:17:07.633] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:17:10.637] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:17:12.174] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:17:13.640] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:17:16.643] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:17:17.175] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:17:19.646] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:17:22.174] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:17:22.650] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:17:25.650] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:17:27.174] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:17:28.653] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:17:31.657] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:17:34.660] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:17:37.174] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:17:37.660] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:17:40.663] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:17:43.663] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:17:46.667] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:17:49.670] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:17:52.177] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:17:52.670] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:17:55.673] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:17:58.676] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:18:01.677] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:18:04.678] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:18:07.196] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:18:07.680] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:18:10.683] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:18:13.683] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:18:16.687] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:18:17.200] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:18:19.690] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:18:22.203] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:18:22.693] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:18:25.696] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:18:28.697] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:18:31.700] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:18:34.703] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:18:37.703] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:18:40.707] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:18:42.207] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:18:43.707] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:18:46.710] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:18:47.207] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:18:49.713] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:18:52.207] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:18:52.717] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:18:55.717] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:18:58.719] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:19:01.722] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:19:04.725] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:19:07.727] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:19:10.730] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:19:13.730] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:19:16.733] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:19:19.733] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:19:22.226] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:19:22.736] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:19:25.737] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:19:28.740] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:19:31.743] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:19:32.232] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:19:34.743] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:19:37.746] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:19:40.747] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:19:43.750] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:19:46.750] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:19:49.753] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:19:52.753] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:19:55.756] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:19:58.757] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:20:01.760] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:20:04.763] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:20:07.766] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:20:10.767] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:20:12.256] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:20:13.770] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:20:16.770] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:20:17.258] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:20:19.771] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:20:22.773] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:20:25.777] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:20:28.778] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:20:31.780] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:20:34.783] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:20:37.783] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:20:40.787] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:20:42.268] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:20:43.787] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:20:46.790] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:20:47.272] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:20:49.793] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:20:52.274] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:20:52.795] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:20:55.797] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:20:57.273] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:20:58.800] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:21:01.803] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:21:02.276] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:21:04.803] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:21:07.276] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:21:07.807] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:21:10.810] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:21:13.812] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:21:16.813] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:21:17.283] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:21:19.817] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:21:22.817] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:21:25.820] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:21:28.820] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:21:31.823] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:21:34.827] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:21:37.279] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:21:37.827] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:21:40.830] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:21:43.833] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:21:46.836] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:21:49.840] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:21:52.840] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:21:55.843] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:21:58.846] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:22:01.847] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:22:04.849] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:22:07.283] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:22:07.850] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:22:10.853] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:22:13.853] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:22:16.857] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:22:19.860] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:22:22.860] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:22:25.862] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:22:28.863] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:22:31.864] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:22:32.289] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:22:34.867] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:22:37.291] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:22:37.870] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:22:40.873] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:22:42.290] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:22:43.873] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:22:46.877] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:22:49.880] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:22:52.883] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:22:55.886] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:22:58.890] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:23:01.893] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:23:04.893] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:23:07.897] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:23:10.900] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:23:13.900] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:23:16.901] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:23:19.903] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:23:22.295] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:23:22.907] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:23:25.910] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:23:27.295] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:23:28.913] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:23:31.913] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:23:34.915] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:23:37.303] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:23:37.917] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:23:40.920] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:23:43.923] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:23:46.923] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:23:49.927] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:23:52.930] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:23:55.932] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:23:58.933] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:24:01.937] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:24:02.316] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:24:04.938] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:24:07.940] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:24:10.943] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:24:13.947] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:24:16.950] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:24:19.953] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:24:22.953] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:24:25.957] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:24:28.960] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:24:31.961] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:24:34.963] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:24:37.967] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:24:40.970] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:24:43.970] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:24:46.971] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:24:47.337] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:24:49.973] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:24:52.341] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:24:52.977] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:24:55.978] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:24:58.980] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:25:01.983] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:25:02.346] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:25:04.986] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:25:07.987] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:25:10.987] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:25:13.990] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:25:16.991] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:25:19.993] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:25:22.356] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:25:22.997] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:25:26.000] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:25:29.003] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:25:32.003] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:25:32.360] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:25:35.007] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:25:37.359] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:25:38.037] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:25:41.040] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:25:42.359] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:25:44.043] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:25:47.043] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:25:47.362] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:25:50.047] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:25:52.361] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:25:53.047] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:25:56.050] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:25:57.363] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:25:59.052] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:26:02.053] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:26:05.057] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:26:08.060] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:26:11.062] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:26:14.063] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:26:17.067] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:26:20.067] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:26:22.362] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:26:23.070] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:26:26.073] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:26:27.364] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:26:29.076] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:26:32.077] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:26:35.080] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:26:38.080] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:26:41.083] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:26:42.925] [230006] (discord.cpp:551): JS console: ["%c[GatewaySocket]","[RECONNECT] gateway requested I reconnect."]
+[2022-05-18 00:26:42.925] [230006] (discord.cpp:551): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2022-05-18 00:26:43.119] [230006] (discord.cpp:551): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 194 ms"]
+[2022-05-18 00:26:43.120] [230006] (discord.cpp:551): JS console: ["%c[GatewaySocket]","[RESUME] resuming session 7ccd58b63563f9b0a0b0289896f28be0, seq: 4788"]
+[2022-05-18 00:26:43.120] [230006] (discord.cpp:551): JS console: ["%c[GatewaySocket]","[HELLO] via [\"gateway-prd-main-b4pv\",{\"micros\":0.0}], heartbeat interval: 41250, took 195 ms"]
+[2022-05-18 00:26:43.243] [230006] (discord.cpp:551): JS console: ["%c[GatewaySocket]","[RESUMED] took 318ms, via [\"gateway-prd-main-b4pv\",{\"micros\":4552,\"calls\":[\"discord-sessions-blue-prd-2-68\",{\"micros\":48}]}], replayed 2 events, new seq: 4790"]
+[2022-05-18 00:26:44.086] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:26:47.088] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:26:47.368] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:26:50.090] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:26:52.369] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:26:53.093] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:26:56.097] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:26:57.373] [230006] (discord.cpp:551): JS console: ["%c[RunningGameStore]","games",""]
+[2022-05-18 00:26:59.100] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:27:02.100] [230090] (device_info_linux.cc:45): NumberOfDevices
+[2022-05-18 00:27:05.103] [230090] (device_info_linux.cc:45): NumberOfDevices

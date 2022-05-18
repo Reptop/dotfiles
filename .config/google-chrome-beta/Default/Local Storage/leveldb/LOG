@@ -1,0 +1,9 @@
+2022/05/17-23:07:50.391 3 Reusing MANIFEST /home/raed/.config/google-chrome-beta/Default/Local Storage/leveldb/MANIFEST-000001
+2022/05/17-23:07:50.391 3 Recovering log #7
+2022/05/17-23:07:50.392 3 Reusing old log /home/raed/.config/google-chrome-beta/Default/Local Storage/leveldb/000007.log 
+2022/05/17-23:15:49.158 c Level-0 table #11: started
+2022/05/17-23:15:49.164 c Level-0 table #11: 29406 bytes OK
+2022/05/17-23:15:49.196 c Delete type=0 #7
+2022/05/18-00:07:02.345 2b Level-0 table #13: started
+2022/05/18-00:07:02.351 2b Level-0 table #13: 19030 bytes OK
+2022/05/18-00:07:02.358 2b Delete type=0 #10

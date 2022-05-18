@@ -1,0 +1,6 @@
+2022/05/17-23:07:50.397 78cf Reusing MANIFEST /home/raed/.config/google-chrome-beta/Default/Sync Data/LevelDB/MANIFEST-000001
+2022/05/17-23:07:50.397 78cf Recovering log #4
+2022/05/17-23:07:50.399 78cf Reusing old log /home/raed/.config/google-chrome-beta/Default/Sync Data/LevelDB/000004.log 
+2022/05/18-00:05:42.542 5a5c6 Level-0 table #8: started
+2022/05/18-00:05:42.548 5a5c6 Level-0 table #8: 91883 bytes OK
+2022/05/18-00:05:42.553 5a5c6 Delete type=0 #4

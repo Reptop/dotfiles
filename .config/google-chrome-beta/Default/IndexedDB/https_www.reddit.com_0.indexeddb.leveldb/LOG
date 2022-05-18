@@ -1,0 +1,7 @@
+2022/05/18-00:05:30.493 5a5c6 Reusing MANIFEST /home/raed/.config/google-chrome-beta/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/05/18-00:05:30.493 5a5c6 Recovering log #3
+2022/05/18-00:05:30.494 5a5c6 Reusing old log /home/raed/.config/google-chrome-beta/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/000003.log 
+2022/05/18-00:06:20.038 4f272 Level-0 table #5: started
+2022/05/18-00:06:20.041 4f272 Level-0 table #5: 5792 bytes OK
+2022/05/18-00:06:20.047 4f272 Delete type=0 #3
+2022/05/18-00:06:20.047 4f272 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
